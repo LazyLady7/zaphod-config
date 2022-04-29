@@ -32,7 +32,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "Figma";
+            label = "Base";
             bindings = <
                 &kp Q         &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P
                 &kp A    &hm LALT S &hm LCTRL D &hm LSHFT F    &kp G          &kp H            &hm RSHFT J    &hm RCTRL K &hm LALT L &hm LGUI QUOT
