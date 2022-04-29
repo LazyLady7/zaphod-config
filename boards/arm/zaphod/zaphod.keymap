@@ -45,7 +45,7 @@
             label = "Num";
             bindings = <
 	    	&kp N1     &kp N2       &kp N3        &kp N4       &kp N5        	&kp N6          &kp N7         &kp N8      &kp N9     &kp N0
-                &kp TAB   &kp LBKT    	&kp RBKT      &trans       &kp EQUAL    	&kp UP          &kp N4         &kp N5      &kp N6     &kp LEFT
+                &kp TAB    &kp LBKT    	&kp RBKT      &trans       &kp EQUAL    	&kp UP          &kp N4         &kp N5      &kp N6     &kp LEFT
                 &kp GRAVE  &kp C_VOL_DN &kp C_VOL_UP  &trans       &kp BSLH     	&kp DOWN        &kp N1         &kp N2      &kp N3     &kp RIGHT
                                         	      &trans       &trans    	   	&trans        	&trans
             >;
@@ -55,8 +55,8 @@
             label = "Spec";
             bindings = <
 	    	&kp ESC    &kp N2       &kp N3        &kp N4       &bt BT_CLR        	&kp N6          &kp N7         &kp N8      &kp N9     &kp N0
-                &kp SEMI   &kp LBKT    	&kp RBKT      &trans       &kp EQUAL    	&kp UP          &kp N4         &kp N5      &kp N6     &kp LEFT
-                &kp GRAVE  &kp C_VOL_DN &kp C_VOL_UP  &trans       &kp BSLH     	&kp DOWN        &kp N1         &kp N2      &kp N3     &kp RIGHT
+                &kp CAPS   &kp LBKT    	&kp RBKT      &trans       &kp EQUAL    	&kp UP          &kp N4         &kp N5      &kp N6     &kp LEFT
+                &kp LSHFT  &kp C_VOL_DN &kp C_VOL_UP  &trans       &kp BSLH     	&kp DOWN        &kp N1         &kp N2      &kp N3     &kp RIGHT
                                         	      &trans       &trans    	   	&trans        	&trans
             >;
         };
