@@ -77,7 +77,7 @@ lv_obj_t *zmk_display_status_screen() {
     zaphod_bongo_cat_widget_init(&bongo_widget, center_frame);
 #else
     dont_label = lv_label_create(center_frame, NULL);
-    lv_label_set_text(dont_label, "Figma.vn");
+    lv_label_set_text(dont_label, "Onerity");
 
     panic_label = lv_label_create(center_frame, NULL);
     lv_label_set_text(panic_label, "by Long");
