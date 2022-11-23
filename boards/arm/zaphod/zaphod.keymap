@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define NUM_L 1
-#define SPE_L 2
+#define SPE_L 1
+#define NUM_L 2
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -34,30 +34,30 @@
         default_layer {
             label = "Base";
             bindings = <
-                &kp Q         &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P
-                &kp A         &kp S 	 &kp D 	     &kp F          &kp G          &kp H            &kp J          &kp K       &kp L 	  &kp SEMI
-                &hm LSHFT Z   &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &hm RSHFT FSLH
-                                                     &kp LGUI       &lt NUM_L RET  &lt NUM_L SPACE  &lt SPE_L BKSP
+                &lt NUM_L Q   &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P
+                &hm LSHFT A   &kp S 	 &kp D 	     &kp F          &kp G          &kp H            &kp J          &kp K       &kp L 	  &hm RSHFT SQT
+                &hm LCTRL Z   &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
+                                                     &kp LALT       &lt NUM_L RET  &lt NUM_L SPACE  &lt SPE_L BKSP
             >;
         };
 
-	num_layer {
-            label = "Num";
+	spe_layer {
+            label = "Arrow";
             bindings = <
-	    	&kp N1     &kp N2       &kp N3        &kp N4       &kp N5        	&kp N6          &kp N7         &kp N8      &kp N9     &kp N0
-                &kp TAB    &kp LBKT    	&kp RBKT      &trans       &kp MINUS    	&kp UP          &kp N4         &kp N5      &kp N6     &kp EQUAL
-                &kp LSHFT  &kp C_VOL_DN &kp C_VOL_UP  &trans       &kp SQT	     	&kp DOWN        &kp N1         &kp N2      &kp N3     &kp RSHFT
-                                        	      &trans       &kp LGUI       	&kp LEFT       &kp RIGHT
+	    	&kp ESC    &trans       &trans        &trans       &bt BT_CLR        	&trans          &trans         &kp UP      &trans     &kp DEL
+                &kp LSHFT  &kp LBKT    	&kp RBKT      &trans       &kp EQUAL    	&trans          &kp LEFT       &kp DOWN    &kp RIGHT  &kp RET
+                &kp CAPS   &kp C_VOL_DN &kp C_VOL_UP  &trans       &kp BSLH     	&trans          &trans         &trans      &trans     &kp RIGHT
+                                        	      &trans       &trans    	   	&trans        	&kp RGUI
             >;
         };
 	
-	spe_layer {
-            label = "Spec";
+	num_layer {
+            label = "Num";
             bindings = <
-	    	&kp ESC    &kp N2       &kp N3        &kp N4       &bt BT_CLR        	&kp N6          &kp N7         &kp N8      &kp N9     &kp N0
-                &kp CAPS   &kp LBKT    	&kp RBKT      &trans       &kp EQUAL    	&kp UP          &kp N4         &kp N5      &kp N6     &kp LEFT
-                &kp LSHFT  &kp C_VOL_DN &kp C_VOL_UP  &trans       &kp BSLH     	&kp DOWN        &kp N1         &kp N2      &kp N3     &kp RIGHT
-                                        	      &trans       &trans    	   	&trans        	&trans
+	    	&kp TAB    &kp N2       &kp N3        &kp N4       &kp N5        	&kp N6          &kp N7         &kp N8      &kp N9     &kp N0
+                &kp LSHFT  &kp LBKT    	&kp RBKT      &trans       &kp MINUS    	&kp UP          &kp N4         &kp N5      &kp N6     &kp SEMI
+                &trans     &kp C_VOL_DN &kp C_VOL_UP  &trans       &kp SQT	     	&kp DOWN        &kp N1         &kp N2      &kp N3     &kp RSHFT
+                                        	      &trans       &trans       	&trans          &trans
             >;
         };
     };
