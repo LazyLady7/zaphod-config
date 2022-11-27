@@ -46,7 +46,7 @@
             bindings = <
 	    	&kp ESC    &trans       &trans        &trans       &bt BT_CLR        	&trans          &trans         &kp UP      &trans     &kp DEL
                 &kp LSHFT  &kp TAB    	&kp LALT      &kp LBKT     &kp RBKT    	        &trans          &kp LEFT       &kp DOWN    &kp RIGHT  &kp RET
-                &kp LCTRL  &trans       &tran         &trans       &trans        	&trans          &trans         &trans      &trans     &trans
+                &kp LCTRL  &trans       &trans        &trans       &trans        	&trans          &trans         &trans      &trans     &trans
                                         	      &trans       &trans    	   	&trans        	&kp RGUI
             >;
         };
