@@ -34,10 +34,10 @@
         default_layer {
             label = "Base";
             bindings = <
-                &lt SPE_L Q   &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P
-                &hm LSHFT A   &kp S 	 &kp D 	     &kp F          &kp G          &kp H            &kp J          &kp K       &kp L 	  &hm RSHFT SQT
-                &hm LCTRL Z   &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
-                                                     &kp LALT       &lt NUM_L RET  &lt NUM_L SPACE  &lt SPE_L BKSP
+                &lt SPE_L Q   &kp W      &kp E       &kp R            &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P
+                &hm LSHFT A   &kp S 	 &kp D 	     &kp F            &kp G          &kp H            &kp J          &kp K       &kp L 	    &hm RSHFT SQT
+                &hm LCTRL Z   &kp X      &kp C       &kp V            &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
+                                                     &lt SPE_L TAB   &lt NUM_L RET  &lt SPE_L BKSP  &lt NUM_L SPACE
             >;
         };
 
@@ -45,8 +45,8 @@
             label = "Arrow";
             bindings = <
 	    	&kp ESC    &trans       &trans        &trans       &bt BT_CLR        	&trans          &trans         &kp UP      &trans     &kp DEL
-                &kp LSHFT  &kp LBKT    	&kp RBKT      &trans       &kp EQUAL    	&trans          &kp LEFT       &kp DOWN    &kp RIGHT  &kp RET
-                &kp CAPS   &kp C_VOL_DN &kp C_VOL_UP  &trans       &kp BSLH     	&trans          &trans         &trans      &trans     &kp RIGHT
+                &kp LSHFT  &kp TAB    	&kp LALT      &trans       &trans    	        &trans          &kp LEFT       &kp DOWN    &kp RIGHT  &kp RET
+                &kp LCTRL  &trans       &tran         &trans       &trans        	&trans          &trans         &trans      &trans     &trans
                                         	      &trans       &trans    	   	&trans        	&kp RGUI
             >;
         };
@@ -54,10 +54,10 @@
 	num_layer {
             label = "Num";
             bindings = <
-	    	&kp TAB    &kp N2       &kp N3        &kp N4       &kp N5        	&kp N6          &kp N7         &kp N8      &kp N9     &kp N0
-                &kp LSHFT  &kp LBKT    	&kp RBKT      &trans       &kp MINUS    	&kp UP          &kp N4         &kp N5      &kp N6     &kp SEMI
-                &trans     &kp C_VOL_DN &kp C_VOL_UP  &trans       &kp SQT	     	&kp DOWN        &kp N1         &kp N2      &kp N3     &kp RSHFT
-                                        	      &kp LALT     &trans       	&trans          &trans
+	    	&kp CAPS   &trans       &trans        &trans       &trans        	&kp BSLH        &kp N7         &kp N8      &kp N9     &kp N0
+                &kp LSHFT  &trans    	&trans      &kp LBKT       &kp RBKT        	&kp EQUAL       &kp N4         &kp N5      &kp N6     &kp RET
+                &trans     &kp C_VOL_DN &kp C_VOL_UP  &trans       &trans	     	&kp MINUS       &kp N1         &kp N2      &kp N3     &kp SEMI
+                                        	      &trans       &trans       	&trans          &trans
             >;
         };
     };
