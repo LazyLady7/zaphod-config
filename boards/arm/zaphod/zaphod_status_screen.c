@@ -77,10 +77,10 @@ lv_obj_t *zmk_display_status_screen() {
     zaphod_bongo_cat_widget_init(&bongo_widget, center_frame);
 #else
     dont_label = lv_label_create(center_frame, NULL);
-    lv_label_set_text(dont_label, "Cui Bap");
+    lv_label_set_text(dont_label, "Don't");
 
     panic_label = lv_label_create(center_frame, NULL);
-    lv_label_set_text(panic_label, "Co Nuong");
+    lv_label_set_text(panic_label, "Panic");
 #endif // IS_ENABLED(CONFIG_ZAPHOD_BONGO_CAT)
 
 #if IS_ENABLED(CONFIG_ZMK_WIDGET_LAYER_STATUS)
